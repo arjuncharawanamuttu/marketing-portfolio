@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Relief Brace - Arjun Portfolio</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="main-panel project-page">
+
+  <div class="corner-nav">
+    <a href="index.html">← Back</a>
+  </div>
+
+  <section class="project-hero">
+
+    <div class="hero-copy">
+      <p class="case-label">CAMPAIGN CASE STUDY</p>
+
+      <h1>Relief<br><span>Brace</span></h1>
+
+      <div class="hero-line"></div>
+
+      <p class="hero-description">
+        A paid ads campaign focused on pain relief messaging, product benefit angles, and short-form creative testing for a support brace product.
+      </p>
+
+      <a href="#creative" class="hero-button">View Creative ↗</a>
+    </div>
+
+    <div class="hero-visual">
+      <img src="images/brace-hero.jpg" alt="Relief Brace Creative">
+    </div>
+
+  </section>
+
+  <section class="stats-strip">
+
+    <div class="stat-card">
+      <h3>1</h3>
+      <p>Purchase generated</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>$4–$5</h3>
+      <p>Approx CPC range</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Pain</h3>
+      <p>Core messaging angle</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Video</h3>
+      <p>Creative testing format</p>
+    </div>
+
+  </section>
+
+  <section class="case-study-grid">
+
+    <div class="overview-block">
+      <p class="case-label">OVERVIEW</p>
+      <h2>Campaign<br>Overview</h2>
+    </div>
+
+    <div class="overview-text">
+      <p>
+        This campaign tested creative angles for a relief brace product, focusing on pain points, mobility, comfort, and problem-aware messaging.
+      </p>
+
+      <p>
+        The goal was to create direct-response creatives that quickly communicated the problem, showed the product benefit, and encouraged users to click through.
+      </p>
+    </div>
+
+    <div class="focus-areas">
+      <p class="case-label">KEY FOCUS AREAS</p>
+
+      <div class="focus-grid">
+        <div>
+          <h3>Pain Point Hooks</h3>
+          <p>Opening angles focused on discomfort, daily movement, and fast attention.</p>
+        </div>
+
+        <div>
+          <h3>Benefit Messaging</h3>
+          <p>Messaging built around support, comfort, relief, and better movement.</p>
+        </div>
+
+        <div>
+          <h3>Video Creative</h3>
+          <p>Short-form creative testing designed to communicate the product quickly.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="creative" class="creative-showcase">
+
+    <div class="corner-title">
+      <h1>Creative Showcase</h1>
+      <span></span>
+    </div>
+
+    <div class="showcase-switcher">
+
+      <span
+        class="switcher-link active-switch"
+        onclick="showShowcaseTab('landing', this)"
+      >
+        LANDING PAGE
+      </span>
+
+      <span class="switcher-divider">|</span>
+
+      <span
+        class="switcher-link"
+        onclick="showShowcaseTab('creatives', this)"
+      >
+        CREATIVES
+      </span>
+
+    </div>
+
+    <!-- LANDING PAGE -->
+
+    <div
+      class="showcase-tab-content active"
+      id="landing-tab"
+    >
+
+      <div class="landing-wrapper">
+
+        <div class="stack-showcase landing-feature">
+
+          <div class="stack-preview stack-back-1"></div>
+          <div class="stack-preview stack-back-2"></div>
+
+          <img
+            src="images/brace-landing-1.jpg"
+            class="stack-main-image"
+            data-gallery="landing"
+            data-index="0"
+            alt=""
+          >
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CREATIVES -->
+
+    <div
+      class="showcase-tab-content"
+      id="creatives-tab"
+    >
+
+      <div class="brace-video-grid">
+
+  <video class="brace-video-tile" muted playsinline loop data-gallery="videos" data-index="0">
+    <source src="videos/reliefbrace-1.mp4" type="video/mp4">
+  </video>
+
+  <video class="brace-video-tile" muted playsinline loop data-gallery="videos" data-index="1">
+    <source src="videos/reliefbrace-2.mp4" type="video/mp4">
+  </video>
+
+  <video class="brace-video-tile" muted playsinline loop data-gallery="videos" data-index="2">
+    <source src="videos/reliefbrace-3.mp4" type="video/mp4">
+  </video>
+
+  <video class="brace-video-tile" muted playsinline loop data-gallery="videos" data-index="3">
+    <source src="videos/reliefbrace-4.mp4" type="video/mp4">
+  </video>
+
+  <video class="brace-video-tile" muted playsinline loop data-gallery="videos" data-index="4">
+    <source src="videos/reliefbrace-5.mp4" type="video/mp4">
+  </video>
+
+  <video class="brace-video-tile" muted playsinline loop data-gallery="videos" data-index="5">
+    <source src="videos/reliefbrace-6.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+
+      <span class="lightbox-close">
+        &times;
+      </span>
+
+      <button class="lightbox-prev">
+        ‹
+      </button>
+
+      <img
+        class="lightbox-image"
+        id="lightbox-image"
+      >
+
+      <button class="lightbox-next">
+        ›
+      </button>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script>
+const galleries = {
+landing: [
+  "images/brace-landing-1.jpg",
+  "images/brace-landing-2.jpg",
+  "images/brace-landing-3.jpg",
+  "images/brace-landing-4.jpg",
+  "images/brace-landing-5.jpg"
+],
+videos: [
+  "videos/reliefbrace-1.mp4",
+  "videos/reliefbrace-2.mp4",
+  "videos/reliefbrace-3.mp4",
+  "videos/reliefbrace-4.mp4",
+  "videos/reliefbrace-5.mp4",
+  "videos/reliefbrace-6.mp4"
+],
+
+  creatives: [
+    "images/brace1.jpg",
+    "images/brace2.jpg",
+    "images/brace3.jpg",
+    "images/brace4.jpg"
+  ]
+};
+
+const lightbox = document.getElementById("lightbox");
+
+let currentGallery = [];
+let currentIndex = 0;
+
+function renderLightboxItem() {
+
+  const file = currentGallery[currentIndex];
+
+  if (file.endsWith(".mp4")) {
+
+    lightbox.innerHTML = `
+      <span class="lightbox-close">&times;</span>
+
+      <button class="lightbox-prev">‹</button>
+
+      <video class="lightbox-video" controls autoplay>
+        <source src="${file}" type="video/mp4">
+      </video>
+
+      <button class="lightbox-next">›</button>
+    `;
+
+  } else {
+
+    lightbox.innerHTML = `
+      <span class="lightbox-close">&times;</span>
+
+      <button class="lightbox-prev">‹</button>
+
+      <img class="lightbox-image" src="${file}">
+
+      <button class="lightbox-next">›</button>
+    `;
+  }
+
+  document.querySelector(".lightbox-next").addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    currentIndex =
+      (currentIndex + 1) % currentGallery.length;
+
+    renderLightboxItem();
+  });
+
+  document.querySelector(".lightbox-prev").addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    currentIndex =
+      (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+
+    renderLightboxItem();
+  });
+
+  document.querySelector(".lightbox-close").addEventListener("click", () => {
+
+    const video = lightbox.querySelector("video");
+
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+
+    lightbox.classList.remove("active");
+
+  });
+}
+
+document.querySelectorAll("[data-gallery]").forEach((item) => {
+
+  item.addEventListener("click", () => {
+
+    const galleryName = item.dataset.gallery;
+
+    currentGallery = galleries[galleryName];
+
+    currentIndex = parseInt(item.dataset.index);
+
+    lightbox.classList.add("active");
+
+    renderLightboxItem();
+
+  });
+
+});
+
+lightbox.addEventListener("click", () => {
+
+  const video = lightbox.querySelector("video");
+
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+  }
+
+  lightbox.classList.remove("active");
+
+});
+
+function showShowcaseTab(tabId, element) {
+
+  document.querySelectorAll(".showcase-tab-content").forEach(content => {
+    content.classList.remove("active");
+  });
+
+  document.getElementById(tabId + "-tab").classList.add("active");
+
+  document.querySelectorAll(".switcher-link").forEach(link => {
+    link.classList.remove("active-switch");
+  });
+
+  element.classList.add("active-switch");
+}
+</script>
+
+</body>
+</html>

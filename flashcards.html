@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Talking Flash Cards - Arjun Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="main-panel project-page">
+
+  <div class="corner-nav">
+    <a href="index.html">← Back</a>
+  </div>
+
+  <section class="project-hero">
+    <div class="hero-copy">
+      <p class="case-label">CAMPAIGN CASE STUDY</p>
+      <h1>Talking<br><span>Flash Cards</span></h1>
+      <div class="hero-line"></div>
+      <p class="hero-description">
+        A paid ads campaign focused on UGC-style creatives, parent-focused messaging, and creative testing for a children’s educational product.
+      </p>
+      <a href="#creative" class="hero-button">View Creative ↗</a>
+    </div>
+
+    <div class="hero-visual">
+      <img src="images/talkingflashcards-hero.jpg" alt="Talking Flash Cards Creative">
+    </div>
+  </section>
+
+  <section class="stats-strip">
+    <div class="stat-card">
+      <h3>UGC</h3>
+      <p>Creative direction</p>
+    </div>
+    <div class="stat-card">
+      <h3>2</h3>
+      <p>Purchases generated</p>
+    </div>
+    <div class="stat-card">
+      <h3>$4–$5</h3>
+      <p>Approx CPC range</p>
+    </div>
+    <div class="stat-card">
+      <h3>Hooks</h3>
+      <p>Tested across creatives</p>
+    </div>
+  </section>
+
+  <section class="case-study-grid">
+    <div class="overview-block">
+      <p class="case-label">OVERVIEW</p>
+      <h2>Campaign<br>Overview</h2>
+    </div>
+
+    <div class="overview-text">
+      <p>
+        This campaign tested creative angles for a talking flash cards product, focusing on parent attention, child learning, and short-form ad hooks.
+      </p>
+      <p>
+        The goal was to make the product feel easy to understand quickly, while testing which visual hooks and messaging angles drove the strongest engagement.
+      </p>
+    </div>
+
+    <div class="focus-areas">
+      <p class="case-label">KEY FOCUS AREAS</p>
+
+      <div class="focus-grid">
+        <div>
+          <h3>UGC Creative</h3>
+          <p>Short-form ad style designed to feel native, simple, and engaging.</p>
+        </div>
+        <div>
+          <h3>Parent Messaging</h3>
+          <p>Messaging focused on learning, attention, and educational value.</p>
+        </div>
+        <div>
+          <h3>Hook Testing</h3>
+          <p>Testing different opening angles to capture attention faster.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="creative" class="creative-showcase">
+
+  <div class="corner-title">
+    <h1>Creative Showcase</h1>
+    <span></span>
+  </div>
+
+  <!-- TABS -->
+
+  <div class="showcase-switcher">
+
+  <span
+    class="switcher-link active-switch"
+    onclick="showShowcaseTab('landing', this)"
+  >
+    LANDING PAGE
+  </span>
+
+  <span class="switcher-divider">|</span>
+
+  <span
+    class="switcher-link"
+    onclick="showShowcaseTab('creatives', this)"
+  >
+    CREATIVES
+  </span>
+
+</div>
+
+  <!-- LANDING PAGE TAB -->
+
+  <div
+    class="showcase-tab-content active"
+    id="landing-tab"
+  >
+
+
+    <div class="landing-wrapper">
+
+      <div class="stack-showcase landing-feature">
+
+        <div class="stack-preview stack-back-1"></div>
+        <div class="stack-preview stack-back-2"></div>
+
+        <img
+          src="images/talkingflashcards-landing-1.jpg"
+          class="stack-main-image"
+          data-gallery="landing"
+          data-index="0"
+          alt=""
+        >
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CREATIVES TAB -->
+
+  <div
+    class="showcase-tab-content"
+    id="creatives-tab"
+  >
+
+    <p class="case-label">
+     
+    </p>
+
+    <div class="creative-split-layout">
+
+      <!-- VIDEO STACK -->
+
+      <div class="creative-stack-column">
+
+        <div class="stack-showcase creative-stack">
+
+          <div class="stack-preview stack-back-1"></div>
+          <div class="stack-preview stack-back-2"></div>
+
+        <video
+  class="stack-main-video"
+  muted
+  playsinline
+  loop
+  data-gallery="videos"
+  data-index="0"
+>
+  <source
+    src="videos/talkingflashcards-video-1.mp4"
+    type="video/mp4"
+  >
+</video>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGE STACK -->
+
+      <div class="creative-stack-column">
+
+        <div class="stack-showcase creative-stack">
+
+          <div class="stack-preview stack-back-1"></div>
+          <div class="stack-preview stack-back-2"></div>
+
+          <img
+            src="images/talkingflashcards1.jpg"
+            class="stack-main-image"
+            data-gallery="creatives"
+            data-index="0"
+            alt=""
+          >
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- LIGHTBOX -->
+
+  <div class="lightbox" id="lightbox">
+
+    <span class="lightbox-close">
+      &times;
+    </span>
+
+    <button class="lightbox-prev">
+      ‹
+    </button>
+
+    <img
+      class="lightbox-image"
+      id="lightbox-image"
+    >
+
+    <button class="lightbox-next">
+      ›
+    </button>
+
+  </div>
+
+</section>
+
+</main>
+
+<script>
+const galleries = {
+  landing: [
+    "images/talkingflashcards-landing-1.jpg",
+    "images/talkingflashcards-landing-2.jpg",
+    "images/talkingflashcards-landing-3.jpg",
+    "images/talkingflashcards-landing-4.jpg"
+  ],
+videos: [
+  "videos/talkingflashcards-video-1.mp4",
+  "videos/talkingflashcards-video-2.mp4",
+  "videos/talkingflashcards-video-3.mp4",
+  "videos/talkingflashcards-video-4.mp4",
+  "videos/talkingflashcards-video-5.mp4",
+  "videos/talkingflashcards-video-6.mp4"
+],
+  creatives: [
+    "images/talkingflashcards1.jpg",
+    "images/talkingflashcards2.jpg",
+    "images/talkingflashcards3.jpg",
+    "images/talkingflashcards4.jpg",
+    "images/talkingflashcards5.jpg",
+    "images/talkingflashcards6.jpg",
+    "images/talkingflashcards7.jpg",
+    "images/talkingflashcards8.jpg"
+  ]
+};
+
+const lightbox = document.getElementById("lightbox");
+
+let currentGallery = [];
+let currentIndex = 0;
+
+function renderLightboxItem() {
+
+  const file = currentGallery[currentIndex];
+
+  if (file.endsWith(".mp4")) {
+
+    lightbox.innerHTML = `
+      <span class="lightbox-close">&times;</span>
+
+      <button class="lightbox-prev">‹</button>
+
+      <video class="lightbox-video" controls autoplay>
+        <source src="${file}" type="video/mp4">
+      </video>
+
+      <button class="lightbox-next">›</button>
+    `;
+
+  } else {
+
+    lightbox.innerHTML = `
+      <span class="lightbox-close">&times;</span>
+
+      <button class="lightbox-prev">‹</button>
+
+      <img class="lightbox-image" src="${file}">
+
+      <button class="lightbox-next">›</button>
+    `;
+  }
+
+  document.querySelector(".lightbox-next").addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    currentIndex =
+      (currentIndex + 1) % currentGallery.length;
+
+    renderLightboxItem();
+  });
+
+  document.querySelector(".lightbox-prev").addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    currentIndex =
+      (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+
+    renderLightboxItem();
+  });
+
+  document.querySelector(".lightbox-close").addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+}
+
+document.querySelectorAll("[data-gallery]").forEach((item) => {
+
+  item.addEventListener("click", () => {
+
+    const galleryName = item.dataset.gallery;
+
+    currentGallery = galleries[galleryName];
+
+    currentIndex = parseInt(item.dataset.index);
+
+    lightbox.classList.add("active");
+
+    renderLightboxItem();
+
+  });
+
+});
+
+
+
+lightbox.addEventListener("click", () => {
+
+  const video = lightbox.querySelector("video");
+
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+  }
+
+  lightbox.classList.remove("active");
+
+});
+function showShowcaseTab(tabId, element) {
+  document.querySelectorAll(".showcase-tab-content").forEach(content => {
+    content.classList.remove("active");
+  });
+
+  document.getElementById(tabId + "-tab").classList.add("active");
+
+  document.querySelectorAll(".switcher-link").forEach(link => {
+    link.classList.remove("active-switch");
+  });
+
+  element.classList.add("active-switch");
+}
+</script>
+
+</body>
+</html>
