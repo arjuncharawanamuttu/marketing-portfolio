@@ -778,6 +778,85 @@ p {
   transform: translateY(-6px);
   box-shadow: 0 40px 90px rgba(0,0,0,0.45);
 }
-body {
-  background: red !important;
+/* REAL MOBILE FIX */
+
+@media screen and (max-width: 900px) {
+
+  .page {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 18px !important;
+    gap: 22px !important;
+  }
+
+  .sidebar-card {
+    width: 100% !important;
+    max-width: none !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 26px 22px !important;
+  }
+
+  .main-panel {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .profile-box {
+    margin-bottom: 16px !important;
+  }
+
+  .profile-flip {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .profile-box h1 {
+    font-size: 32px !important;
+  }
+
+  .corner-nav {
+    overflow-x: auto !important;
+    padding: 18px 20px !important;
+  }
+
+  .corner-nav a {
+    font-size: 15px !important;
+    white-space: nowrap !important;
+  }
+
+  .page-section {
+    padding: 30px 22px !important;
+  }
+
+  .page-section h2 {
+    font-size: 28px !important;
+  }
+
+  .page-section p {
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+  }
+
+  .card-grid,
+  .card-grid.two-up {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .card,
+  .work-card,
+  .ai-card {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 26px !important;
+  }
+
+  .work-card img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 260px !important;
+    object-fit: contain !important;
+  }
 }
