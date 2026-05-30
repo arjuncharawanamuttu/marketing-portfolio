@@ -860,52 +860,30 @@ p {
     object-fit: contain !important;
   }
 }
-/* MOBILE WORK SECTION FIX */
+
+/* CLEAN MOBILE WORK CARDS */
 
 @media screen and (max-width: 900px) {
 
   #work .card-grid {
+    display: grid !important;
     grid-template-columns: 1fr !important;
-    gap: 22px !important;
+    gap: 20px !important;
   }
 
   #work .card {
-    padding: 24px !important;
-    min-height: auto !important;
+    width: 100% !important;
+    padding: 0 !important;
+    min-height: 180px !important;
+    overflow: hidden !important;
+    border-radius: 22px !important;
   }
 
   #work .card img {
     width: 100% !important;
-    height: 260px !important;
-    object-fit: contain !important;
-    border-radius: 18px !important;
-  }
-}
-/* FORCE MOBILE WORK CARDS */
-
-@media screen and (max-width: 900px) {
-
-  #work .card-grid,
-  #work .card-grid.two-up {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 24px !important;
-  }
-
-  #work .card,
-  #work a.card {
-    width: 100% !important;
-    min-height: 260px !important;
-    padding: 28px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  #work img {
-    width: 100% !important;
-    height: 220px !important;
-    object-fit: contain !important;
-    border-radius: 18px !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
   }
 }
