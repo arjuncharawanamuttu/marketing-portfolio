@@ -860,3 +860,24 @@ p {
     object-fit: contain !important;
   }
 }
+/* MOBILE WORK SECTION FIX */
+
+@media screen and (max-width: 900px) {
+
+  #work .card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  #work .card {
+    padding: 24px !important;
+    min-height: auto !important;
+  }
+
+  #work .card img {
+    width: 100% !important;
+    height: 260px !important;
+    object-fit: contain !important;
+    border-radius: 18px !important;
+  }
+}
