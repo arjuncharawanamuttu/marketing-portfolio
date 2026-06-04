@@ -193,7 +193,7 @@ p {
 }
 
 .page-section {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   scroll-margin-top: 120px;
 }
 
@@ -900,5 +900,18 @@ p {
     font-size: 13px !important;
   }
 
+}
+.next-project-btn {
+  margin-left: auto;
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: opacity 0.2s ease;
+}
+
+.next-project-btn:hover {
+  opacity: 0.75;
+  text-decoration: none;
 }
 
